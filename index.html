@@ -22,13 +22,30 @@
     img {
         min-width: 100px;
     }
+    
+         .appearingDot1 {
+            animation: appearNow 1s infinite;
+        }
+        .appearingDot2 {
+            animation: appearNow 1s infinite;
+            animation-delay: .25s;
+        }
+        .appearingDot3 {
+            animation: appearNow 1s infinite;
+            animation-delay: .55s;
+        }
+
+        @keyframes appearNow {
+            100% {opacity: 0%;
+            }
+        }
 
 </style>
 
 </head>
 <body>
     
-    <h1>Coming Soon...</h1>
+    <h1>Coming Soon<span class = "appearingDot1">.</span> <span class = "appearingDot2">.</span> <span class = "appearingDot3">.</span></h1>
 
     <img src = "images/Website-Design-Photo.jpg">
 
