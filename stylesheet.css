@@ -31,10 +31,10 @@ body {
 
 .navbar-anchors-wrap a {
     font-family: 'Monoton', cursive;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-decoration: underline transparent;
     color: black;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 5px;
     transition: background-color 1s, box-shadow 2s;
 }
@@ -61,6 +61,15 @@ body {
     max-width: 500px;
     line-height: 1.5;
     margin-right: 5%;
+}
+
+.fontChange {
+    transition: background-color 0.5s;
+    border-radius: 5px;
+}
+
+.fontChange:hover {
+    background-color: #A7978B;
 }
 
 .appearingDot1 {
