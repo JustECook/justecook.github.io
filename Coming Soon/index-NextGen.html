@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Cook</title>
+
+    <style>
+
+    </style>
+
+<style>
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        min-width: 45px;
+    }
+
+    .appearingDot1 {
+        animation: appearingCharacter 1s infinite;
+    }
+
+    .appearingDot2 {
+        animation: appearingCharacter 1s infinite;
+        animation-delay: .25s;
+    }
+
+    .appearingDot3 {
+        animation: appearingCharacter 1s infinite;
+        animation-delay: .5s;
+    }
+    
+    @keyframes appearingCharacter {
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .animated-image-wrap {
+        position: absolute;
+        top: 20%;
+        min-width: 200px;
+        z-index: 1;
+    }
+
+    img {
+        position: relative;
+        width: 100%;
+    }
+
+    /* .craneMovements-wrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 50px;
+        bottom: 350px;
+        animation: boxRaiseAndLower 4s infinite;
+        width: 100%;
+        z-index: 2;
+    } */
+
+    .craneMovements-wrap {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 6%;
+        margin-bottom: -7%;
+        animation: boxRaiseAndLower 4s infinite;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .craneMovement-cable {
+        height: 60px;
+        border-left: 1px solid black;
+    }
+
+    .craneMovement-box {
+        height: 80px;
+        width: 45px;
+        background: blue;
+        border: 3px solid black;
+        
+    }
+
+    
+
+    @keyframes boxRaiseAndLower {
+        0% {
+            bottom: 350px;
+        }
+
+        50% {
+            bottom: 370px;
+        }
+
+        100% {
+            bottom: 350px;
+        }
+    }
+
+    .clockMovements-wrap {
+        position: relative;
+        bottom: 440px;
+        left: 262px;
+        width: 100%;
+    }
+
+    .clockFace {
+        height: 76px;
+        width: 76px;
+        border: 6px solid black;
+        border-radius: 50%;
+        background: blue;
+    }
+
+    .clockHand {
+        position: relative;
+        height: 1px;
+        width: 34px;
+        background: black;
+        border-right: 3px solid black;
+        bottom: 45px;
+        left: 5px;
+        transform-origin: 100%;
+        animation: rotateClockHand 1.5s linear infinite;
+    }
+
+    @keyframes rotateClockHand {
+        0% {
+            transform: rotate(0deg);
+
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+
+
+</style>
+
+</head>
+<body>
+    
+    <h1>Coming Soon<span class = "appearingDot1">.</span> <span class = "appearingDot2">.</span> <span class = "appearingDot3">.</span></h1>
+
+    <div class="animated-image-wrap">
+        <img src = "images/Website-Design-Photo.jpg">
+
+        <div class="craneMovements-wrap">
+            <div class="craneMovement-cable"></div>
+            <div class="craneMovement-box"></div>
+        </div>
+    
+        <div class="clockMovements-wrap">
+            <div class="clockFace"></div>
+            <div class="clockHand"></div>
+        </div>
+    </div>
+   
+
+</body>
+</html>
