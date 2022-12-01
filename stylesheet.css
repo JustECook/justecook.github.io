@@ -20,13 +20,14 @@ body {
 
 .navbar-anchors-wrap {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     font-weight: bold;
 }
 
 .navbar-anchor-wrap {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .navbar-anchors-wrap a {
@@ -64,12 +65,13 @@ body {
 }
 
 .fontChange {
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, color .5s;
     border-radius: 5px;
 }
 
 .fontChange:hover {
     background-color: #A7978B;
+    color: white;
 }
 
 .appearingDot1 {
@@ -125,13 +127,13 @@ body {
     padding: 5px 10px;
     text-decoration: underline transparent;
     color: black;
-    transition: color 0.5s, background-color 0.5s, border .3s;
+    transition: color 0.5s, background-color 0.5s;
 }
 
 .main-button-wrap a:hover {
     color: white;
     background: #A7978B;
-    border: none;
+    border: #A7978B solid 1px;
 }
 
 /* TECHNOLOGIES */
@@ -207,6 +209,7 @@ body {
 .project-text-wrap a {
     text-decoration: underline transparent;
     color: black;
+    font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.5s;
 }
@@ -233,19 +236,20 @@ body {
     border: black solid 1px;
     border-radius: 5px;
     padding: 5px 10px;
-    transition: color 0.5s, background-color 0.5s, border .3s;
+    transition: color 0.5s, background-color 0.5s;
 }
 
 .project-anchor-wrap a:hover {
     color: white;
     background: #A7978B;
-    border: white;
+    border: #A7978B 1px solid;
 }
 
 .project-image-wrap-website {
     max-width: 250px;
     max-height: 300px;
     box-shadow: 5px 10px 20px;
+    border-radius: 5px;
     overflow: hidden;
     overflow-y: scroll;
     z-index: 1;
@@ -259,15 +263,18 @@ body {
     max-width: 250px;
     max-height: 230px;
     box-shadow: 5px 10px 20px;
+    border-radius: 5px;
     z-index: 1;
 }
 
 .project-image-wrap img {
     width: 100%; 
+    border-radius: 5px;
 }
 
 .project-image-wrap-website img {
     width: 100%;
+    border-radius: 5px;
 }
 
 /* CONTACT CONTENT STYLES */
@@ -295,6 +302,19 @@ body {
 
 .contact-text-wrap p {
     font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+.contact-text-wrap a {
+    text-decoration: underline transparent;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.5s; 
+}
+
+.contact-text-wrap a:hover {
+    background-color: #A7978B;
 }
 
 .contact-anchors-wrap {
@@ -322,24 +342,11 @@ body {
 
 .contact-anchor-wrap img {
     max-width: 55px;
+    transition: transform 1.5s;
 }
 
 .contact-anchor-wrap img:hover {
-    animation: growBigger 2s infinite; 
-}
-
-@keyframes growBigger {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+    transform: scale(1.4);
 }
 
 /* FOOTER STYLES */
@@ -358,6 +365,7 @@ body {
     text-decoration: underline transparent;
     color: black;
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 .footer-text-wrap {
@@ -365,5 +373,111 @@ body {
     font-size: smaller;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
+}
+
+/* ABOUT STYLES */
+
+.resume-content {
+    padding-top: 5%;
+}
+
+.resume-text-wrap {
+    text-align: center;
+}
+
+.resume-title-text-wrap {
+    font-family: 'Monoton', cursive;
+    text-align: center;
+}
+
+.resume-subtitle-text-wrap {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    margin: 3% 10%;
+}
+
+/* HOBBIES STYLES */
+
+.hobbies-wrap {
+    background:rgb(211, 208, 208);
+    padding-top: 5%;
+    padding-bottom: 1%;
+    margin-top: 5%;
+}
+
+.hobbies-text-wrap {
+    text-align: center;
+    font-family: 'Monoton', cursive;
+}
+
+.hobbies-activities-wrap {
+    margin: 8%;
+}
+
+.hobbies-activity-wrap1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 8%;
+    /* animation: fadeIn 2s linear; */
+}
+
+/* @keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+} */
+
+.hobbies-activity-image-wrap {
+    max-height: 230px;
+    max-width: 250px;
+    box-shadow: 5px 10px 20px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+}
+
+.hobbies-activity-description-wrap {
+    font-family: 'Poppins', sans-serif;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.hobbies-activity-description-wrap a {
+        text-decoration: underline transparent;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.5s;
+}
+
+.hobbies-activity-description-wrap a:hover {
+    background-color: #A7978B;
+}
+
+.hobbies-activity-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.hobbies-activity-wrap2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 8%;
+    /* animation: fadeIn 2s linear; */
+   
+    
+}
+
+.hobbies-activity-wrap3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 8%;
+    /* animation: fadeIn 2s linear; */
 }
 
