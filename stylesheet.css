@@ -399,6 +399,11 @@ body {
     margin: 3% 10%;
 }
 
+.documents-button-wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 
 /* HOBBIES STYLES */
